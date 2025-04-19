@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Translator</title>
+    <link rel="icon" href="./assets/img/logo-ai.ico" />
+    <link rel="stylesheet" href="/assets/css/translator.css" />
+    <script src="./assets/js/translator/date.js" defer></script>
+    <script src="./assets/js/translator/message.js " defer></script>
+    <script src="./assets/js/translator/translate.js" defer></script>
+    <script src="./assets/js/translator/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Head -->
+      <div class="head">
+        <div class="head-left">
+          <div class="avatar">
+            <img src="./assets/img/translator/avatar.png" alt="avatar image" />
+          </div>
+          <div class="title1">
+            <span> Specialization Software Development: AI Translator </span>
+            <span id="spn-subtitle" class="title2"> Welcome </span>
+          </div>
+        </div>
+        <div class="model">
+          <select id="cmb-model" class="cmb-model">
+            <option value="openAI">OpenAI</option>
+            <option value="deepSeek">DeepSeek</option>
+          </select>
+        </div>
+      </div>
+      <!-- Head -->
+
+      <!-- Body -->
+      <div class="translator">
+        <div class="translator-container">
+          <span id="spn-body"> </span>
+        </div>
+        <form
+          id="frm-translator"
+          action="javascript:void(0)"
+          class="frm-translator"
+        >
+          <div class="icon">
+            <img src="./assets/img/translator/icono.png" alt="red icon" />
+          </div>
+          <input
+            id="input-text"
+            type="text"
+            class="translate-box"
+            placeholder="¿What do you want to translate?"
+            autocomplete="off"
+            autofocus
+          />
+          <select id="cmb-language" class="cmb-language">
+            <option value="Inglés">English</option>
+            <option value="Francés">French</option>
+            <option value="Alemán">German</option>
+            <option value="Italiano">Italian</option>
+            <option value="Portugués">Portuguese</option>
+            <option value="Ruso">Russian</option>
+            <option value="Chino">Chinese</option>
+            <option value="Japonés">Japanese</option>
+            <option value="Árabe">Arab</option>
+            <option value="Coreano">Korean</option>
+            <option value="Español">Spanish</option>
+          </select>
+          <span class="accept">
+            <div class="send">
+              <img
+                id="img-send"
+                src="./assets/img/translator/enviar.png"
+                alt="send"
+              />
+            </div>
+          </span>
+        </form>
+      </div>
+      <!-- Body -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dbd0d0;
+  display: grid;
+  place-items: center;
+  min-height: 90vh;
+}
+
+.container {
+  display: grid;
+  background-color: #ece0e0;
+  width: 750px;
+  height: 450px;
+  grid-template-columns: 45% 55%;
+  border-radius: 10px;
+  place-items: center;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to bottom right, #f0f0f0, #d9d9d9);
+  width: 950px;
+  height: 850px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container-img {
+  width: 300px;
+  height: auto;
+  border: 1px solid #6b6868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.container-text {
+  padding: 0 20px 0 5px;
+}
+
+.container-text h2 {
+  font-size: 1.2rem;
+  color: #424bc4;
+}
+
+.container-text p {
+  font-size: 14px;
+  color: #44455c;
+  margin: 10px 0;
+}
+
+.container-text textarea {
+  resize: none;
+  border: 2px solid #6b6868;
+  border-radius: 5px;
+  margin: 5px 0 10px;
+  font-size: 12px;
+  color: #44455c;
+  background-color: #ece0e0;
+}
+
+.container-text textarea,
+.container-text button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.container-personalization {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #a24141; */
+  margin-bottom: 10px;
+}
+
+.container-personalization p {
+  text-align: center;
+  color: #424bc4;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.personalization {
+  display: flex;
+  gap: 10px
+}
+
+.personalization .style,
+.personalization .quality,
+.personalization .size,
+.personalization .model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  /* background-color: #424bc4; */
+}
+
+.personalization label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.personalization select {
+  width: 100%;
+  text-align: center;
+  /* background-color: #424bc4; */
+  background-image: linear-gradient(to left, #424bc4, #a24141);
+  color: #161621;
+  border-radius: 5px;
+}
+
+.container-text button {
+  border: none;
+  background-image: linear-gradient(to right, #424bc4, #a24141);
+  color: #eee;
+  font-size: 14px;
+}
+
+.container-text button::active {
+  transform: scale(0.95);
+}
+
+.container-text span {
+  display: block;
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: #44455c;
+  font-size: 10px;
+}
